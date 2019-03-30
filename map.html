@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Map</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+body {
+background: url(images/gray.jpg) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-color: #cccccc;}.icon {color: #9999FF;font-size: 28px;}.icon:hover{color: #878787;}.contact li{display: inline;margin-left: 15px;}input[type="button"]{background: #9999FF;}
+input[type="button"]:hover{background: #F2F2F2;}
+	</style>
+	</head>
+	<body>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="home.php"><span style="color: #9999FF;">Find </span>Your Salon</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links"><br>
+				    <li><a href="login.php" style="float: right;">Hairdresser Login</a></li>
+					<br><br><br>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="home.php#one" >About</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="home.php#two">Contact Us</a></li>
+					<li><a href="dashboard_hairdresser.php">Appointment</a></li>
+					
+				</ul>
+				
+				<ul class="contact">
+						<li><a href="https://twitter.com/fyoursalon" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Find-Your-Salon-2011161565807346/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/fyoursalon/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:fyoursalon@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+			</nav>
+
+<center><select id="list" name="list" id="list" accesskey="target" style="margin-top: 200px; width: 45%;">
+    <option value='none' selected style="font-weight: bold;">- Choose a location then click go -</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+embakasi+nairobi/@-1.3131791,36.8941262,15z/data=!3m1!4b1">Embakasi</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+gigiri+nairobi/@-1.2492167,36.7850713,14z">Gigiri</option>
+	
+	 <option value="https://www.google.co.ke/maps/search/salons+in+hurlingham+nairobi/@-1.2930944,36.787735,15.9z">Hurlingham</option>
+	 
+	 <option value="https://www.google.co.ke/maps/search/salons+in+huruma+nairobi/@-1.2564321,36.8656926,16.13z">Huruma</option>
+	 
+	 <option value="https://www.google.co.ke/maps/search/salons+in+imara+daima+nairobi/@-1.3056336,36.7971527,13.67z">Imara Daima</option>
+	 
+	 <option value="https://www.google.co.ke/maps/search/salons+in+karen+nairobi/@-1.3207093,36.7356912,13.06z">Karen</option>
+	 
+	 <option value="https://www.google.co.ke/maps/search/salons+in+kasarani+nairobi/@-1.2255655,36.8835968,15.4z">Kasarani</option>
+	 
+	 <option value="https://www.google.co.ke/maps/search/salons+in+kitisuru+nairobi/@-1.2477607,36.7821801,13z/data=!3m1!4b1">Kitisuru</option>
+	 
+    <option value="https://www.google.co.ke/maps/search/salons+in+madaraka+nairobi/@-1.3019144,36.7942627,14.21z">Madaraka</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+muthaiga+nairobi/@-1.2605339,36.8002934,15.13z">Muthaiga</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+parklands+nairobi/@-1.261282,36.800955,15.1z">Parklands</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+ridgeways+nairobi/@-1.2515697,36.7905955,14.47z">Ridgeways</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+riverside+nairobi/@-1.2665189,36.7853159,14z">Riverside</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+upperhill+nairobi/@-1.2310262,36.7287398,13z/data=!3m1!4b1">Upperhill</option>
+	
+	<option value="https://www.google.co.ke/maps/search/salons+in+westlands+nairobi/@-1.2310267,36.7287399,13z/data=!3m1!4b1">Westlands</option>
+	
+   
+</select><br><br>
+<input type="button" value="Go" onclick="goToNewPage()" />
+</center>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
